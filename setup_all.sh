@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-# set -e          # Exit on error
-# set -o pipefail # Exit on pipe error
-# set -x          # Enable verbosity
+set -e          # Exit on error
+set -o pipefail # Exit on pipe error
+set -x          # Enable verbosity
 
 # Dont link DS_Store files
 find . -name ".DS_Store" -exec rm {} \;
 
-PROGRAMS=(alias bash env git python scripts stow tmux vim zsh)
+PROGRAMS=(bash env git python scripts tmux vim)
+#PROGRAMS=(alias bash env git python scripts stow tmux vim zsh)
 # PROGRAMS=(alias aspell bash env git latex python scripts stow tmux vim zsh mac terminal)
 OLD_DOTFILES="dotfile_bk_$(date -u +"%Y%m%d%H%M%S")"
 mkdir $OLD_DOTFILES
@@ -34,10 +35,10 @@ backup_if_exists ~/.profile
 
 mkdir -p ~/.vim/undodir
 
-for f in ~/.zprezto/runcoms/z*
-do
-    mv "$f" $OLD_DOTFILES
-done
+#for f in ~/.zprezto/runcoms/z*
+#do
+#    mv "$f" $OLD_DOTFILES
+#done
 
 for program in ${PROGRAMS[@]}; do
   stow -v --target=$HOME $program

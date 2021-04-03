@@ -113,7 +113,7 @@ Plug 'chriskempson/base16-vim'         " Base16 themes
 " Plug 'crusoexia/vim-monokai'
 " Plug 'phanviet/vim-monokai-pro'
 Plug 'patstockwell/vim-monokai-tasty'
-" Plug 'erichdongubler/vim-sublime-monokai'
+Plug 'erichdongubler/vim-sublime-monokai'
 " Plug 'flazz/vim-colorschemes'          " Bunch of color schemes
 Plug 'sainnhe/sonokai'                 " Monokai Pro-like scheme
 Plug 'tanvirtin/monokai.nvim'
@@ -125,7 +125,7 @@ Plug 'rhysd/vim-grammarous'            " GrammarCheck using LanguageTool
 Plug 'ron89/thesaurus_query.vim'       " Synonym query
 
 " Other
-Plug 'wakatime/vim-wakatime'           " Wakatime time tracking
+"Plug 'wakatime/vim-wakatime'           " Wakatime time tracking
 Plug 'ihsanturk/neuron.vim'            " For neuron Zettelkasten
 Plug 'liuchengxu/vim-which-key'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
