@@ -24,6 +24,7 @@ fi
 
 # FZF
 if [[ ! -f $HOME/.fzf/bin/fzf ]]; then
+    [[ -d $HOME/.fzf ]] && rm -rf $HOME/.fzf
     git clone https://github.com/junegunn/fzf.git $HOME/.fzf
     yes | $HOME/.fzf/install
 fi
