@@ -61,7 +61,7 @@ pull_repo $HOME/.tmux/plugins/tpm
 #cd $HOME/.zprezto
 #git pull
 #git submodule update --init --recursive
-#cd - 
+#cd -
 #
 #mkdir -p $HOME/.zsh
 #

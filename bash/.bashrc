@@ -21,3 +21,6 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 HISTIGNORE="$HISTIGNORE:jrnl *"
+
+[ -f ~/.bashrc_local ] && source ~/.bashrc_local
+

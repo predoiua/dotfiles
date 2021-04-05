@@ -26,6 +26,9 @@ if command -v exa > /dev/null; then
   alias la="exa -a"
 fi
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 mvr () {
     # reverse mv
     mv $2 $1
