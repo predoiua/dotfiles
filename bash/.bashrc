@@ -23,4 +23,4 @@ fi
 HISTIGNORE="$HISTIGNORE:jrnl *"
 
 [ -f ~/.bashrc_local ] && source ~/.bashrc_local
-
+set -o vi
