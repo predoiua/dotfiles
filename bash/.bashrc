@@ -23,4 +23,9 @@ fi
 HISTIGNORE="$HISTIGNORE:jrnl *"
 
 [ -f ~/.bashrc_local ] && source ~/.bashrc_local
+
+if [ -d /opt/homebrew/bin ]; then
+    export PATH=$PATH:/opt/homebrew/bin
+fi
+
 set -o vi
