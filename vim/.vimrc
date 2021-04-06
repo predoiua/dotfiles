@@ -798,7 +798,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Spellcheck Keyboard shorcut (https://vim.fandom.com/wiki/Toggle_spellcheck_with_function_keys)
 map <F5> :setlocal spell! spelllang=en_us<CR>
-map <F7> :NERDTreeToggle<CR>
+"map <F7> :NERDTreeToggle<CR>
+nnoremap <silent> <expr> <F7> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 map <F8> :Vista!!<CR>
 
 " Syntax Highlighting Debugging
