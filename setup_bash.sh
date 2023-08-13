@@ -3,6 +3,8 @@ for file in ${to_delete[@]}; do
     rm -f $HOME/$file
 done
 
-program=bash
-stow -v --target=$HOME $program
-echo "Done $program"
+programs="bash env"
+for program in $programs; do
+    stow -v --target=$HOME $program
+done
+echo "Done bash"
