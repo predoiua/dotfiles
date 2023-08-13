@@ -1,4 +1,5 @@
-#!/usr/bin/env zsh
+#!/usr/bin/bash
+
 function alias_if_exists() {
   # Does the alias only if the aliased program is installed
     if command -v $2 > /dev/null; then

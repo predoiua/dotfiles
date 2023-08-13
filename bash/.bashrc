@@ -21,3 +21,7 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 HISTIGNORE="$HISTIGNORE:jrnl *"
+
+
+alias ll="ls -la"
+alias vi=nvim
