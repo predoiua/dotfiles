@@ -9,7 +9,30 @@ They are designed for a BASH + TMUX + NEOVIM stack on RHEL.
 ~~~
 nmtui  # connect net, set hostname
 hostnamectl set-hostname alma8.work.vv10.eu
-yum install git python3 stow tmux
+yum install epel-release
+yum install git python3 stow tmux tar
+~~~
+
+Neovim
+~~~
+#yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+yum install -y neovim python3-neovim
+~~~
+
+Node
+~~~
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+nvm
+source ~/.bashrc
+nvm install --lts   #                  Install the latest LTS version
+nvm use --lts       #                  Use the latest LTS version
+~~~
+
+Dotfiles
+~~~
+git clone https://github.com/predoiua/dotfiles.git
+cd ~/dotfiles
+
 ~~~
 
 ## Original

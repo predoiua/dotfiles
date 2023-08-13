@@ -55,7 +55,7 @@ fi
 #fi
 
 if command -v npm > /dev/null; then
-    mkdir -o $NVIM/node/bin
+    mkdir -p $NVIM/node/bin
     ln -s $(which node) $NVIM/node/bin/node
     npm install -g neovim
 else
