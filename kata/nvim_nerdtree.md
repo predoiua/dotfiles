@@ -1,0 +1,2 @@
+
+space oe # toggle NerdTree
