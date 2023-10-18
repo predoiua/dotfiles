@@ -25,3 +25,6 @@ HISTIGNORE="$HISTIGNORE:jrnl *"
 
 alias ll="ls -la"
 alias vi=nvim
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
