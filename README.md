@@ -6,29 +6,34 @@ They are designed for a BASH + TMUX + NEOVIM stack on RHEL.
 - [tmux](https://github.com/tmux/tmux/wiki)
 
 ## Alma 8/9
-~~~
+on VM may need to enable net, set hostname
+~~~sh
 nmtui  # connect net, set hostname
 hostnamectl set-hostname alma8.work.vv10.eu
-yum install epel-release
-yum install git python3 stow tmux tar make
+~~~
+
+required packages
+~~~sh
+dnf install epel-release
+dnf install git python3 stow tmux tar make
 ~~~
 
 Neovim
-~~~
+~~~sh
 #yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 yum install -y neovim python3-neovim
 ~~~
 
 Node
-~~~
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+~~~sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 source ~/.bashrc
 nvm install --lts   #                  Install the latest LTS version
 nvm use --lts       #                  Use the latest LTS version
 ~~~
 
 Dotfiles
-~~~
+~~~sh
 git clone https://github.com/predoiua/dotfiles.git
 cd ~/dotfiles
 ./setup_neovim.sh
